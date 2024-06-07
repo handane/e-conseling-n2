@@ -152,7 +152,8 @@ if (!isset($_SESSION['konseling'])) {
                '" . $jam . "',
                '" . $no_wa . "',
                '" . $permasalahan . "',
-               '" . $status . "'
+               '" . $status . "',
+               'belum ada'
             )");
 
                       $cek_statistik = mysqli_query($conn, "SELECT * FROM statistik WHERE username_konselor = '$username_konselor'");
